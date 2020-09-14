@@ -13,7 +13,7 @@ export default (props) => {
         <div className="card-body">
           <h3>{p.title}</h3>
           <CommentCreate postId={p.id} />
-          <CommentList postId={p.id} />
+          <CommentList comments={p.comments} />
         </div>
       </div>
     );
